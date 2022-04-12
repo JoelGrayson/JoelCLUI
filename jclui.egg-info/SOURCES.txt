@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+jclui.egg-info/PKG-INFO
+jclui.egg-info/SOURCES.txt
+jclui.egg-info/dependency_links.txt
+jclui.egg-info/top_level.txt
+src/__init__.py
+src/jclui.py
