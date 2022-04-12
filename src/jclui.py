@@ -1,4 +1,3 @@
-import time
 import re
 import sys
 
@@ -82,9 +81,6 @@ def move_left(times=1):
 def move_right(times=1):
     sys.stdout.write(f'\x1b[{times}C')
     sys.stdout.flush()
-
-# def end_of_line()
-    # sys.stdout.write()
 
 def read_line():
     return sys.stdout.readline(0)
