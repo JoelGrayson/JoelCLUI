@@ -1,14 +1,19 @@
+# Joel Command Line User Interface (jclui)
+A command line user interface tool.
+
+
 ### Demo
 ```python
-import joelclui as jclui
+import joelclui as j
 
-jclui.print('2+2=[green]4[/] and 3+3=[bg red]6[/]')
-jclui.print('[yellow]Warning. [red][underline]Error[/] [green]Success[/]')
-jclui.print('[bg blue][yellow]Colorful[/] Back to normal')
+j.print('2+2=[green]4[/] and 3+3=[bg red]6[/]')
+j.print('[yellow]Warning. [red][underline]Error[/] [green]Success[/]')
+j.print('[bg blue][yellow]Colorful[/] Back to normal')
 
-jclui.print('Status: TBD')
-jclui.move_up()
-jclui.print('[bold]Status: [green]Complete[/]')
+j.print('Status: TBD')
+j.move_up()
+j.print('[bold]Status: [green]Complete[/]')
+
 ```
 Output:
 ![Terminal output image](https://w.joelgrayson.com/image/joelclui%20demo.jpg)
