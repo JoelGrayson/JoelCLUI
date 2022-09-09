@@ -1,4 +1,3 @@
-import time
 import re
 import sys
 
@@ -40,7 +39,9 @@ bg={ #colors
     'bg cyan': '\033[46m',
     'bg lightgray': '\033[47m',
 }
+
 system_print=print #store print() before redefining
+
 def print(u_str):
     operationsRe='('+'|'.join(list(style)+list(txt)+list(bg))+')' #regex or statement of all the special keywords
     parserRe=r'\['+operationsRe+r'\]'
@@ -67,6 +68,15 @@ def print(u_str):
     
     system_print(u_str)
 
+def test():
+    print('2+2=[green]4[/] and 3+3=[bg red]6[/]')
+    print('[yellow]Warning. [red][underline]Error[/] [green]Success[/]')
+    print('[bg blue][yellow]Colorful[/] Back to normal')
+
+    print('Status: TBD')
+    move_up()
+    print('[bold]Status: [green]Complete[/]')
+
 def move_up(times=1):
     sys.stdout.write(f'\x1b[{times}A')
     sys.stdout.flush()
@@ -82,9 +92,6 @@ def move_left(times=1):
 def move_right(times=1):
     sys.stdout.write(f'\x1b[{times}C')
     sys.stdout.flush()
-
-# def end_of_line()
-    # sys.stdout.write()
 
 def read_line():
     return sys.stdout.readline(0)

@@ -1,0 +1,19 @@
+[project]
+name = "joelclui"
+version = "1.1.4"
+authors = [
+  { name="Joel Grayson", email="joel@joelgrayson.com" },
+]
+description = "A command line user interface tool"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JoelGrayson/jclui"
+"Bug Tracker" = "https://github.com/JoelGrayson/jclui/issues"
