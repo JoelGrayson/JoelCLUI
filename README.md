@@ -1,4 +1,4 @@
-# Joel Command Line User Interface (jclui)
+# Joel Command Line User Interface (JoelClui)
 A command line user interface tool.
 
 
@@ -56,10 +56,10 @@ Wrap on of the modifiers below in square brackets [] to change the printed text'
 ### Arrow navigation methods:
 Optional parameter of how many times to move.
 ```python
-jclui.move_up() #moves cursor up one line
-jclui.move_right()
-jclui.move_down()
-jclui.move_left()
+j.move_up() #moves cursor up one line
+j.move_right()
+j.move_down()
+j.move_left()
 
-jclui.move_up(5) #Up 5 lines
+j.move_up(5) #Up 5 lines
 ```

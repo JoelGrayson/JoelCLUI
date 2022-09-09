@@ -15,5 +15,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/JoelGrayson/jclui"
-"Bug Tracker" = "https://github.com/JoelGrayson/jclui/issues"
+"Homepage" = "https://github.com/JoelGrayson/JoelClui"
+"Bug Tracker" = "https://github.com/JoelGrayson/JoelClui/issues"
