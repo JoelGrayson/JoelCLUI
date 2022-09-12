@@ -1,8 +1,11 @@
-# Joel Command Line User Interface (JoelClui)
-A command line user interface tool.
+# JoelClui, the Easiest Way to _Stylize_ Text and Move the Cursor in Python.
 
+## Installation
+```bash
+pip install joelclui
+```
 
-### Demo
+## Demo
 ```python
 import joelclui as j
 
@@ -17,9 +20,9 @@ j.print('[bold]Status: [green]Complete[/]')
 ```
 Output:
 ![Terminal output image](https://w.joelgrayson.com/image/joelclui%20demo.jpg)
-### Colors
-Wrap on of the modifiers below in square brackets [] to change the printed text's style.
-* Colors
+## Style
+Wrap one of of the modifiers below in square brackets [] to change the printed text's style.
+* Text Color
     * `bold`
     * `green`
     * `yellow`
@@ -39,7 +42,7 @@ Wrap on of the modifiers below in square brackets [] to change the printed text'
     * `success`
     * `warn`
     * `danger`
-* Backgrounds
+* Background Color
     * `bg black`
     * `bg red`
     * `bg green`
@@ -49,11 +52,12 @@ Wrap on of the modifiers below in square brackets [] to change the printed text'
     * `bg cyan`
     * `bg lightgray`
 * Styles
-    * `[/]` clears the console
+    * `[/]` clears styling
     * `bold`
     * `underline`
 
-### Arrow navigation methods:
+
+## Cursor navigation
 Optional parameter of how many times to move.
 ```python
 j.move_up() #moves cursor up one line
