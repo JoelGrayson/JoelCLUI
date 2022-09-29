@@ -4,7 +4,7 @@ import sys
 # Print
 system_print=print #store print() before redefining
 
-def print(u_str):
+def format(u_str): #returns with escaped color characters
     STYLE={
         'reset': '\033[00m',
         'clear': '\033[00m',
@@ -69,7 +69,10 @@ def print(u_str):
         
         matched.start()
     
-    system_print(u_str)
+    return u_str
+
+def print(u_str):
+    system_print(format(u_str))
 
 
 # Navigation
