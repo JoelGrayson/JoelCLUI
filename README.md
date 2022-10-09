@@ -52,9 +52,9 @@ Wrap one of of the modifiers below in square brackets [] to change the printed t
     * `bg cyan`
     * `bg lightgray`
 * Styles
-    * `[/]` clears styling
     * `bold`
     * `underline`
+* `[/]` removes formatting/clears
 
 
 ## Cursor navigation

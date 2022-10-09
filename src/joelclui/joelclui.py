@@ -64,15 +64,15 @@ def format(u_str): #returns with escaped color characters
             u_str=u_str[0:start_i]+TXT[u_char]+u_str[end_i:]
         elif u_char in list(STYLE): #style value
             u_str=u_str[0:start_i]+STYLE[u_char]+u_str[end_i:]
-        else: #unknown value
+        else: #unknown value (never happens)
             raise Exception('Unknown [symbol] matching: '+u_char)
         
         matched.start()
     
     return u_str
 
-def print(u_str):
-    system_print(format(u_str))
+def print(u_str, format_overflow=False): #prints formatted text with a remove formatting at the end unless format_overflow is set to True
+    system_print(format( u_str if format_overflow else u_str+'[/]' ))
 
 
 # Navigation
