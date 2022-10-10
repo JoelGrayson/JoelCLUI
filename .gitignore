@@ -1,4 +1,5 @@
 **/__pycache__
 dist/*
 src/joelclui.egg-info
-dev-test.py
+.vscode/
+*-test.py

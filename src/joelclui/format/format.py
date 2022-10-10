@@ -1,7 +1,7 @@
 import re
 from .CONSTANTS import STYLE, TXT, BG
 
-def expand_special_values(u_str): #* Match Special Values
+def expand_special_values(u_str): # Match Special Values
     ## Rainbow
     rainbow_chars=[TXT['red'], TXT['orange'], TXT['yellow'], TXT['green'], TXT['blue'], TXT['lightblue'], TXT['purple']]
     global rainbow_char_i
@@ -22,12 +22,10 @@ def expand_special_values(u_str): #* Match Special Values
 
     return u_str
     
-def expand_style_txt_bg(u_str):
+def expand_style_txt_bg(u_str): # Match STYLE, TXT, BG
     operationsRe='('+'|'.join(list(STYLE)+list(TXT)+list(BG))+')' #regex or statement of all the special keywords
     parserRe=r'\['+operationsRe+r'\]'
 
-    # Match STYLE, TXT, BG
-    u_str=expand_style_txt_bg(u_str)
     while True:
         matched=re.search(parserRe, u_str)
         if matched is None:

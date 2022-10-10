@@ -1,5 +1,5 @@
 import sys
-from .format.format import format as _format
+from format.format import format as _format
 
 # Print
 system_print=print #store print() before redefining
@@ -34,11 +34,10 @@ def clear_line():
     print ("\033[A\033[A")
 
 def test():
-    print('2+2=[green]4[/] and 3+3=[bg red]6[/]')
-    print('[yellow]Warning. [red][underline]Error[/] [green]Success[/]')
+    print('2+2=[green]4[/] and 3+3=[bg red]6')
+    print('[yellow]Warning. [red][underline]Error[/] [green]Success')
     print('[bg blue][yellow]Colorful[/] Back to normal')
 
     print('Status: TBD')
     move_up()
-    print('[bold]Status: [green]Complete[/]')
-
+    print('[bold]Status: [green]Complete')

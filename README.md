@@ -2,7 +2,7 @@
 
 ## Installation
 ```bash
-pip install joelclui
+pip3 install joelclui
 ```
 
 ## Demo
@@ -16,8 +16,8 @@ j.print('[bg blue][yellow]Colorful[/] Back to normal')
 j.print('Status: TBD')
 j.move_up()
 j.print('[bold]Status: [green]Complete[/]')
-
 ```
+
 Output:
 ![Terminal output image](https://w.joelgrayson.com/image/joelclui%20demo.jpg)
 ## Style
