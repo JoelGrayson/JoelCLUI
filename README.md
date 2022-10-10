@@ -54,6 +54,8 @@ Wrap one of of the modifiers below in square brackets [] to change the printed t
 * Styles
     * `bold`
     * `underline`
+* Fun
+    * `rainbow`
 * `[/]` removes formatting/clears
 
 
