@@ -1,14 +1,14 @@
 import sys
-from .format import format as _format
+from .format import format as _format, CONSTANTS
 
 # Print
 system_print=print #store print() before redefining
 
-def format(u_str): #exported wrapper for _format
-    return _format(u_str)
+def format(u_str, overflow=False): #exported wrapper for _format
+    return _format( u_str if overflow else u_str+'[/]' )
 
-def print(u_str, format_overflow=False): #prints formatted text with a remove formatting at the end unless format_overflow is set to True
-    system_print(format( u_str if format_overflow else u_str+'[/]' ))
+def print(u_str, overflow=False): #prints formatted text with a remove formatting at the end unless overflow is set to True
+    system_print(format(u_str, overflow=overflow))
 
 
 # Navigation
