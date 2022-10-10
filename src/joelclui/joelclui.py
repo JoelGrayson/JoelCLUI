@@ -1,5 +1,5 @@
 import sys
-from format.format import format as _format
+from .format.format import format as _format
 
 # Print
 system_print=print #store print() before redefining
