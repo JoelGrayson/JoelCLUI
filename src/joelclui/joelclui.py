@@ -34,10 +34,13 @@ def clear_line():
     print ("\033[A\033[A")
 
 def test():
-    print('2+2=[green]4[/] and 3+3=[bg red]6')
-    print('[yellow]Warning. [red][underline]Error[/] [green]Success')
-    print('[bg blue][yellow]Colorful[/] Back to normal')
-
-    print('Status: TBD')
-    move_up()
-    print('[bold]Status: [green]Complete')
+    out='-----Text-----\n'
+    for txt in CONSTANTS.TXT.keys():
+        out+=f'[{txt}]{txt}[/]\n'
+    out+='-----BG-----\n'
+    for bg in CONSTANTS.BG.keys():
+        out+=f'[{bg}]{bg}[/]\n'
+    out+='-----Style-----\n'
+    for style in CONSTANTS.STYLE.keys():
+        out+=f'[{style}]{style}[/]\n'
+    print(out)
