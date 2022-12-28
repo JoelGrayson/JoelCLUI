@@ -1,4 +1,4 @@
-# JoelClui, the Easiest Way to _Stylize_ Text and Move the Cursor in Python.
+# JoelCLUI, the Easiest Way to _Stylize_ Text and Move the Cursor in Python.
 
 ## Installation
 ```bash
