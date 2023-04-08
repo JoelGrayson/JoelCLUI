@@ -19,7 +19,7 @@ j.print('[bold]Status: [green]Complete[/]')
 ```
 
 Output:
-![Terminal output image](https://joelgrayson.com/software/joelclui/demo.jpg)
+![Terminal output image](https://joelgrayson.com/image/software/joelclui/demo.jpg)
 ## Style
 Wrap one of of the modifiers below in square brackets [] to change the printed text's style.
 * Text Color
