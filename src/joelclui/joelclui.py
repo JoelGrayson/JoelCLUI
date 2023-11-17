@@ -1,5 +1,6 @@
 from .format import format as _format, CONSTANTS
 from .navigation import *
+import os
 
 def format(u_str, overflow=False): #exported wrapper for _format
     return _format( u_str if overflow else u_str+'[/]' )
@@ -12,6 +13,11 @@ def print(u_str, overflow=False): #prints formatted text with a remove formattin
 def clear_line():
     print("\033[A\033[A")
 
+
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear') #cls for windows
+
+
 def test():
     out='-----Text-----\n'
     for txt in CONSTANTS.TXT.keys():
@@ -23,3 +29,4 @@ def test():
     for style in CONSTANTS.STYLE.keys():
         out+=f'[{style}]{style}[/]\n'
     print(out)
+

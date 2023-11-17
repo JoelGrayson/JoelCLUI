@@ -68,4 +68,6 @@ j.move_down()
 j.move_left()
 
 j.move_up(5) #Up 5 lines
+j.clear() #clears screen
 ```
+
